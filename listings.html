@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listings</title>
+    <link rel="icon" href="src\favicon\favicon.jpg" type="image/x-icon">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+
+        .car {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: black;
+            border: 1px solid black;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .car img {
+            display: block;
+            margin: 0 auto; /* Centers the image horizontally */
+            width: 200px;
+            height: 150px; /* Set the desired height for all images */
+            object-fit: cover; /* Maintain aspect ratio and crop if needed */
+            border-radius: 5px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .car {
+                flex-direction: column;
+            }
+
+            .car img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+    <link rel="icon" href="res/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <section id="Car-Listings">
+        <h2>Listings</h2>
+
+        <div class="car">
+            <div>
+                <h3>Maruti 800</h3>
+                <img src="src/Maruthi 800.jpg" alt="Maruti 800" class="car-image">
+                <p>
+                    Maruti 800: Iconic, affordable, compact car from Maruti Suzuki, known for its reliability, fuel efficiency, and widespread popularity.</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <div>
+                <h3>Volkswagen Polo</h3>
+                <img src="src\vpolo.jpg" alt="Polo" class="car-image">
+                <p>
+                    Volkswagen Polo: Stylish, versatile, and well-built hatchback offering a blend of performance, comfort, and advanced features, making it a popular choice among car enthusiasts.</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <div>
+                <h3>Tata Bolt</h3>
+                <img src="src/tata_car.jpg" alt="Tata Bolt" class="car-image">
+                <p>Tata Bolt: A compact and practical hatchback with a spacious interior, decent performance, and a range of features, providing value for money.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

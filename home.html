@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - J Cars</title>
+  <link rel="icon" href="src\favicon\favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      background-color: rgb(79, 197, 79);
+      font-size: medium;
+      color: black;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .listing1 {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      text-align: center;
+      background-color: aqua;
+    }
+
+    .listing1 img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .dot-matrix {
+      font-family: "Dot Matrix", sans-serif;
+      line-height: 2; /* Adjust the line spacing as needed */
+    }
+
+    @font-face {
+      font-family: "LetteraMonoLLCondLight";
+      src: url("//cdn.shopify.com/s/files/1/0586/3270/0077/t/97/assets/LetteraMonoLLCondLight-Regular.otf?v=165587148734230230191685970477");
+      font-display: swap;
+      font-style: normal;
+      font-weight: normal;
+    }
+    
+    .dot-matrix, .bold {
+      font-family: "LetteraMonoLLCondLight", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="dot-matrix">Welcome to our Home Page</h1>
+    <p id="typing-text" class="dot-matrix"></p>
+  </header>
+
+  <section id="listing1">
+    <script>
+      // The text to be typed
+      var text = `"Welcome to J Cars, your premier destination for top-notch, pre-owned vehicles. With our extensive inventory and exceptional customer service, we strive to make your car-buying experience a breeze. At J Cars, we understand that purchasing a second-hand car is a significant decision, and we're here to ensure you find the perfect vehicle that suits your needs and budget.
+
+Our commitment to quality is unmatched. Each car in our collection undergoes a rigorous inspection process by our certified technicians, guaranteeing reliability and performance. We only select cars with clean histories, ensuring you drive away with confidence. Whether you're looking for a sleek sedan, a spacious SUV, or a sporty coupe, J Cars has a diverse range of models to choose from.
+
+What sets J Cars apart is our dedication to customer satisfaction. Our friendly and knowledgeable sales team is here to assist you throughout the entire process, providing expert guidance and answering any questions you may have. We take the time to understand your preferences and requirements, allowing us to recommend the most suitable options tailored to your lifestyle.
+
+Transparency is at the core of our business. We provide comprehensive vehicle information, including mileage, maintenance records, and accident history, giving you complete peace of mind. Additionally, our pricing is fair, competitive, and clearly displayed, eliminating any hidden surprises.
+
+At J Cars, we believe in going the extra mile to exceed your expectations. That's why we offer flexible financing options to make your dream car a reality. Our finance specialists work with leading banks and lending institutions to secure the best rates and terms, ensuring affordability and convenience. We streamline the paperwork process, saving you time and effort.
+
+Even after you drive off our lot, J Cars continues to provide exceptional after-sales support. Our service center is staffed by skilled technicians who are committed to keeping your car in optimal condition. From routine maintenance to complex repairs, we utilize the latest tools and genuine parts to ensure your vehicle operates smoothly and reliably for years to come.
+
+We value your trust in J Cars and strive to foster long-term relationships with our customers. That's why we offer extended warranties and personalized service plans, providing added protection and peace of mind. Our goal is to become your trusted automotive partner, assisting you throughout your car ownership journey.
+
+Experience the excellence of J Cars today. Visit our showroom and explore our remarkable selection of second-hand cars. Our welcoming ambiance and no-pressure environment allow you to take your time and make an informed decision. You deserve a car that excites and delights, and J Cars is here to make that a reality.
+
+Trust J Cars for exceptional quality, unbeatable service, and a car-buying experience like no other. Discover the joy of owning a pre-owned car that exceeds your expectations. Welcome to the world of J Cars, where your dream car awaits"`;
+
+      // Typing effect variables
+      var speed = 10; // Typing speed in milliseconds
+      var i = 0;
+
+      function typeText() {
+        if (i < text.length) {
+          document.getElementById("typing-text").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeText, speed);
+        }
+      }
+
+      // Start the typing effect
+      typeText();
+    </script>
+  </section>
+
+</body>
+
+</html>
